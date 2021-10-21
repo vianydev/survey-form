@@ -1,0 +1,130 @@
+@import "variables";
+
+body {
+    font-family: $body;
+    color: $blue-900;
+    background-color: $blue-900;
+}
+
+.container {
+    width: 60%;
+    margin: 5rem auto;
+    background-color: $white;
+    border-radius: 30px;
+}
+
+#head {
+    margin-bottom: 3rem;
+    align-self: center;
+    text-align: center;
+}
+
+#img{
+    margin-top: 2.125rem;
+    width: 109px;
+}
+
+h1 {
+    margin: 16px 0;
+}
+
+#description {
+    margin: 0 auto;
+    width: 60%;
+    line-height: 1.4;
+}
+
+#survey-form {
+    margin: 1rem 5rem;
+    padding-bottom: 2.125rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "col1 col2"
+    "button button";
+    column-gap: 2rem;
+}
+
+.col1 {
+    grid-area: col1;
+    flex-grow: 1;
+}
+.col2 {
+    grid-area: col2;
+    flex-grow: 1;
+}
+
+#input-form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+}
+
+#button {
+    grid-area: button;
+    justify-self: center;
+}
+
+#submit {
+    width: 172px;
+    margin-top: 1rem;
+    border: none;
+    color: $white;
+    background-color: $blue;
+}
+
+#gender {
+    padding-top: 15px;
+    display: inline-flex;
+}
+
+.female {
+    padding-left: 15px;
+}
+
+.options {
+    display: inline-flex;
+}
+
+.browser:nth-child(2) {
+    padding: 0 15px;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+input, textarea, select, option {
+    padding: 16px;
+    border: 1px solid $blue-900;
+    border-radius: 8px;
+    color: $blue-900;
+    background-color: $blue-25;
+}
+
+input:active, 
+input:focus-visible, 
+textarea:focus-visible, 
+select:focus-visible  {
+    border-color: $blue;
+    outline: 2px solid $blue;
+
+}
+
+
+@media screen and (max-width: 1089px) {
+    #head {
+        margin-bottom: 1rem;
+    }
+    #survey-form {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #button {
+        align-self: center;
+    }
+}

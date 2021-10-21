@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/normalize.css">
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <div id="head">
+            <img id="img" src="./image/img-globo.png" alt="globo">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Morbi venenatis ultricies orci quis consectetur.</p>
+        </div>
+
+        
+            <form id="survey-form" action="">
+                <div class="col1">
+                    <div id="input-form">
+                        <label for="name" id="name-label">Name</label>
+                        <input id="name" name="name" type="text" placeholder="type your name" required>
+                    </div>
+                    <div id="input-form">
+                        <label for="email" id="email-label">E-mail</label>
+                        <input id="email" name="email" type="email" placeholder="type your e-mail" required>
+                    </div>
+                    <div id="input-form">
+                        <label for="number" id="number-label">Age</label>
+                        <input id="number" name="number" type="number" min="18" max="60" placeholder="type your age" required>
+                    </div>
+                    <div id="input-form">
+                        <div id="gender">
+                            <div class="gender">
+                                <input type="radio" name="gender" value="male">
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="gender female">
+                                <input type="radio" name="gender" value="female">
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col2">
+                    <div id="input-form">
+                        <label for="country" id="number-label">Country:</label>
+                        <select name="country" id="dropdown">
+                            <option value="méxico">México</option>
+                            <option value="canada">Canada</option>
+                        </select>
+                    </div>
+                    <div id="input-form">
+                        <div id="browser">
+                            <p for="checkbox">Browser you use:</p>
+                            <div class="options">
+                                <div class="browser">
+                                    <input type="checkbox" value="chrome">
+                                    <label for="chrome">Chrome</label>
+                                </div>
+                                <div class="browser">
+                                    <input type="checkbox" value="safari"> 
+                                    <label for="safari">Safari</label>
+                                </div>
+                                <div class="browser">
+                                    <input type="checkbox" value="other">
+                                    <label for="other">Other</label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div id="input-form">
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" name="comments" rows="4" maxlength="130" placeholder="We want to know more about you"></textarea>
+                    </div>
+                 </div>
+                 <div id="button">
+                    <input id="submit" type="submit" value="send">
+                </div>
+                
+            </form>
+        </div>
+    
+    </div>
+    
+
+</body>
+</html>
